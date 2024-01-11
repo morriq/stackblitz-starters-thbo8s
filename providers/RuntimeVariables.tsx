@@ -4,7 +4,7 @@ const RuntimeVariablesContext = createContext(null);
 
 export function RuntimeVariablesProvider({ children }) {
   const variables = {
-    gateway: (window as any).GATEWAY,
+    gateway: process.env.NEXT_PUBLIC_GATEWAY,
   };
 
   const value = useMemo(() => variables, [variables]);
