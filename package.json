@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "ASSET_PREFIX= NEXT_PUBLIC_GATEWAY=local next dev",
-    "build": "ASSET_PREFIX=#{ASSET_PREFIX}# NEXT_PUBLIC_GATEWAY=#{NEXT_PUBLIC_GATEWAY}# next build"
+    "dev": "NEXT_PUBLIC_ASSET_PREFIX= NEXT_PUBLIC_GATEWAY=local next dev",
+    "build": "NEXT_PUBLIC_ASSET_PREFIX=#{NEXT_PUBLIC_ASSET_PREFIX}# NEXT_PUBLIC_GATEWAY=#{NEXT_PUBLIC_GATEWAY}# next build"
   },
   "dependencies": {
     "@types/node": "20.6.2",

@@ -21,7 +21,7 @@ export default function FirstStep() {
           value={form}
         />
       </div>
-      <Image src='/cz.svg' alt='foo' />
+      <Image src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/cz.svg`} alt='foo' />
       <button type='button' onClick={() => router.push('/second-step')}>
         Second step
       </button>
